@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EsportsHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navItems">
+                <img src="PHOTO-2025-11-15-04-19-59.jpg" alt="" class="Logo">
+                <ul class="ListItems">
+                    <li class="HomePage">Home</li>
+                    <li class="ExplorePage">Explore</li>
+                    <li class="E-Sports-Page">E-Sports</li>
+                    <li class="LiveStream">Live Streams</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="page1">
+
+            <div class="TrendingContainer">
+
+                <div class="Heading">
+                    Treding Now:
+                </div>
+                <div class="TrendingCards_container">
+
+                </div>
+            </div>
+            <div id="popular-month">
+                <h2 class="Heading">🏅 Popular Games This Month:</h2>
+                <div id="popular-games-container" class="pop-grid">
+
+                </div>
+            </div>
+            <div class="Heading">📊 Genre Popularity Chart</div>
+
+            <div class="chart-container">
+                <canvas id="genreChart"></canvas>
+            </div>
+        </div>
+        <div class="page2">
+            <div class="E-sports-trend">
+                <div class="TrendingEsportsContainer">
+                    <div class="Heading">
+                        🎮 Trending E-sports:
+                    </div>
+                    <div class="TrendingCards_container">
+                        <div class="game-card">
+                            <div class="rank-badge">#1</div><img class="game-img"
+                                src="https://assets.xboxservices.com/assets/4e/bc/4ebcb533-e184-42f3-833b-9aa47a81f39e.jpg?n=153142244433_Poster-Image-1084_1920x720.jpg"
+                                alt="Valorant">
+                            <div class="game-info">
+                                <h2 class="game-title">Valorant</h2>
+                                <div class="rating-section"><span class="rating">⭐ 4.47</span><span
+                                        class="rating-count">(107803)</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#2</div><img class="game-img"
+                                src="https://c.ndtvimg.com/2020-09/uf2koie8_pubg-mobile-650_650x400_08_September_20.jpg"
+                                alt="BGMI">
+                            <div class="game-info">
+                                <h2 class="game-title">BGMI</h2>
+                                <div class="rating-section"><span class="rating">⭐ 4.42</span><span
+                                        class="rating-count">(104799)</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#3</div><img class="game-img"
+                                src="https://images.wallpapersden.com/image/download/counter-strike-2-gaming-poster_bmZoa2yUmZqaraWkpJRobWllrWdma2U.jpg"
+                                alt="Counter Strike 2">
+                            <div class="game-info">
+                                <h2 class="game-title">Counter Strike 2</h2>
+                                <div class="rating-section"><span class="rating">⭐ 4.47</span><span
+                                        class="rating-count">(103803)</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#4</div><img class="game-img"
+                                src="https://images.wallpapersden.com/image/download/2023-free-fire-gaming_bmZpbG2UmZqaraWkpJRmbmdlrWZlbWU.jpg"
+                                alt="Free Fire">
+                            <div class="game-info">
+                                <h2 class="game-title">Free Fire</h2>
+                                <div class="rating-section"><span class="rating">⭐ 4.40</span><span
+                                        class="rating-count">(102803)</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#5</div><img class="game-img"
+                                src="https://business-portal-bucket.s3.amazonaws.com/media/images/41e172c318357d632f53b92d8cb38661_large_cover.original.jpg"
+                                alt="Valorant">
+                            <div class="game-info">
+                                <h2 class="game-title">Dota 2</h2>
+                                <div class="rating-section"><span class="rating">⭐ 4.38</span><span
+                                        class="rating-count">(107803)</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#6</div><img class="game-img"
+                                src="https://images.ctfassets.net/w5r1fvmogo3f/5fJySxdWKgRuLfRtdn81O4/4d7c1bf0af3075638a36926bfc1b32ad/3b4965a458fb41958c17ebf4d79475f0.webp"
+                                alt="Valorant">
+                            <div class="game-info">
+                                <h2 class="game-title">Apex Legends</h2>
+                                <div class="rating-section"><span class="rating">⭐ 4.33</span><span
+                                        class="rating-count">(99785)</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#7</div><img class="game-img"
+                                src="https://gaming-cdn.com/images/products/9456/orig/league-of-legends-pc-game-cover.jpg?v=1747212286"
+                                alt="Valorant">
+                            <div class="game-info">
+                                <h2 class="game-title">League of legends</h2>
+                                <div class="rating-section"><span class="rating">⭐ 4.30</span><span
+                                        class="rating-count">(98076)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Heading">
+                        🎧 Trending E-sports Teams:
+                    </div>
+                    <div class="TrendingCards_container">
+                        <div class="game-card">
+                            <div class="rank-badge">#1</div><img class="game-img"
+                                src="https://cdn.fnatic.com/community/2ea8a4f8-6cea-401d-9387-48cd3ae89532.webp"
+                                alt="Valorant">
+                            <div class="game-info">
+                                <h2 class="game-title">Fnatic</h2>
+                                <div class="rating-section"><span class="rating">Members: 5</span><span
+                                        class="rating-count">Game: Valorant</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#2</div><img class="game-img"
+                                src="https://img-cdn.publive.online/fit-in/640x430/filters:format(webp)/sportsinfo/media/media_files/2025/03/26/Qssnn22YdhyXaNaDbtoG.jpg"
+                                alt="BGMI">
+                            <div class="game-info">
+                                <h2 class="game-title">GodLike Esports</h2>
+                                <div class="rating-section"><span class="rating">Members: 6</span><span
+                                        class="rating-count">Game: BGMI</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#3</div><img class="game-img"
+                                src="https://esportsinsider.com/wp-content/uploads/2021/01/csgo_team_logos-1.jpg"
+                                alt="Counter Strike 2">
+                            <div class="game-info">
+                                <h2 class="game-title">Natus Vincere</h2>
+                                <div class="rating-section"><span class="rating">Members: 5</span><span
+                                        class="rating-count">Game: Counter Strike 2</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#4</div><img class="game-img"
+                                src="https://cdn.oneesports.id/cdn-data/sites/2/2022/11/316709068_641660311083026_3582516281330171782_n-1024x576.jpg"
+                                alt="Free Fire">
+                            <div class="game-info">
+                                <h2 class="game-title">EVOS Phoenix *</h2>
+                                <div class="rating-section"><span class="rating">Members: 5</span><span
+                                        class="rating-count">Game: Free Fire</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#5</div><img class="game-img"
+                                src="https://estnn.com/app/uploads/2019/10/TL-Sign-Alliance-Roster.jpg"
+                                alt="Valorant">
+                            <div class="game-info">
+                                <h2 class="game-title">Team Liquid</h2>
+                                <div class="rating-section"><span class="rating">Member: 4</span><span
+                                        class="rating-count">Game: Dota 2</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#6</div><img class="game-img"
+                                src="https://www.gamereactor.eu/media/59/teamenvyoverhauls_4495963.jpg"
+                                alt="Valorant">
+                            <div class="game-info">
+                                <h2 class="game-title">Team Envy</h2>
+                                <div class="rating-section"><span class="rating">Members: 3</span><span
+                                        class="rating-count">Game: Apex Legends</span></div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="rank-badge">#7</div><img class="game-img"
+                                src="https://api.blog.streetcred.gg/content/images/2021/03/fnatic.jpg"
+                                alt="Valorant">
+                            <div class="game-info">
+                                <h2 class="game-title">Street Cred</h2>
+                                <div class="rating-section"><span class="rating">Members: 5</span><span
+                                        class="rating-count">Game: League of Legends</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page3">
+            <div class="explore-container">
+                <h2 class="Heading">🔍 Explore Games</h2>
+                <div class="search-bar">
+                    <input type="text" id="exploreSearchInput" placeholder="Search for a game..." />
+                    <button id="exploreSearchButton">Search</button>
+                </div>
+                <div id="explore-results" class="TrendingCards_container"></div>
+            </div>
+        </div>
+        <div class="page4">
+            <div id="live-streams">
+                <h2 class="Heading">Trending Live Gaming Streams</h2>
+                <div id="streams-container" class="streams-grid">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="genre.js"></script>
+    <script src="navigation.js"></script>
+    <script src="script.js"></script>
+    <script src="trendingMonth.js"></script>
+    <script src="search.js"></script>
+    <script src="live.js"></script>
+</body>
+
+</html>
